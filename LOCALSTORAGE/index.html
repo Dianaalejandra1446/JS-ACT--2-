@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const myObject = {
+            name: "john doe",
+            age: 32,
+            gender: "male",
+            profession: "optician"
+        }
+        window.localStorage.setItem("myObjet",JSON.stringify(myObject));//Convertir nuestro objeto JavaScript en una cadena porque solo podemos almacenar cadenas en el objeto window.localStorage.
+        console.log(myObject);
+        let newObject = window.localStorage.getItem("myObject");
+        console.log(JSON.parse(newObject));
+
+
+
+        //Para almacenar datos en el local storage, primero debes convertirlos a formato JSON utilizando el método JSON.stringify(), luego puedes utilizar el método localStorage.setItem() para guardar los datos en el local storage
+        const data = { nombre: "Juan", edad: 25 };
+        const jsonData = JSON.stringify(data);
+        localStorage.setItem("usuario", jsonData);
+
+        //Obtener datos del local storage: Para obtener los datos guardados en el local storage, simplemente necesitas utilizar el método localStorage.getItem() y luego convertir el JSON a un objeto JavaScript utilizando JSON.parse()
+        const jsonData2 = localStorage.getItem("usuario");
+        const data2 = JSON.parse(jsonData);
+        console.log(data.nombre); // "Juan"
+        console.log(data.edad); // 25
+
+        //Actualizar datos en el local storage: Si deseas actualizar los datos almacenados en el local storage, primero debes obtener los datos existentes, hacer los cambios necesarios y luego guardarlos nuevamente.
+        const jsonData3 = localStorage.getItem("usuario");
+        const data3 = JSON.parse(jsonData);
+        data.edad = 26;
+        const updatedJsonData = JSON.stringify(data);
+        localStorage.setItem("usuario", updatedJsonData);
+
+        //Eliminar datos del local storage: Si deseas eliminar datos del local storage, puedes utilizar el método localStorage.removeItem()
+        copylocalStorage.removeItem("usuario");
+    </script>
+</body>
+</html>

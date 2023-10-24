@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Conversor de Unidades</title>
+</head>
+<body>
+    <header>
+        <h1>Unidades de Peso</h1>
+    </header>
+    <main>
+        <h2>Convertir: </h2>
+    <div class="peso">
+            <h3>Peso:</h3>
+
+            <label for="valor">Ingrese el valor:</label>
+            <input type="number" id="valorPeso">
+            <label>De:</label>
+            <select id="SelectWeigth1">
+                <option value="0" >Kg</option>
+                <option value="1" >Lb</option>
+                <option value="2" >Onza</option>
+                <option value="3">Arroba</option>
+            </select>
+
+            <label>a:</label>
+            <select id="SelectWeigth2">
+                <option value="0" >Kg</option>
+                <option value="1" >Lb</option>
+                <option value="2" >Onza</option>
+                <option value="3">Arroba</option>
+            </select>
+            <button id="btn-weight">Convertir</button>
+            <div id="resultPeso"></div>
+    </div>
+
+    <div class="longuitud">
+        <h3>Longuitud:</h3>
+
+        <label>Ingrese el valor:</label>
+        <input type="number" id="valorLong">
+        <label>De:</label>
+        <select id="SelectLong1">
+            <option value="0" >M</option>
+            <option value="1" >Km</option>
+            <option value="2" >Milla</option>
+            <option value="3" >Yarda</option>
+            <option value="4" >Codo</option>
+        </select>
+
+        <label>a:</label>
+        <select id="SelectLong2">
+            <option value="0" >M</option>
+            <option value="1" >Km</option>
+            <option value="2" >Milla</option>
+            <option value="3" >Yarda</option>
+            <option value="4" >Codo</option>
+        </select>
+        <div id="resultLong"></div>
+        <button type="button" id="btn-long">Convertir</button>
+</div>
+<div class="temperatura">
+    <h3>Temperatura:</h3>
+
+    <label>Ingrese el valor:</label>
+    <input type="number" id="valorTemp">
+    <label>De:</label>
+    <select id="SelectTemp1">
+        <option value="0">°K</option>
+        <option value="1">°C</option>
+        <option value="2">°F</option>
+
+    </select>
+
+    <label>a:</label>
+    <select id="SelectTemp2">
+        <option value="0">°K</option>
+        <option value="1">°C</option>
+        <option value="2">°F</option>
+    </select>
+    
+    <div id="resultTemp"></div>
+    <button id="btn-temp">Convertir</button>
+</div>
+<div class="tiempo">
+    <h3>Tiempo: </h3>
+
+    <label>De:</label>
+    <label for="valor">Ingrese el valor:</label>
+    <input type="number" id="valorTime">
+    <select id="selectTime1">
+        <option value="0" >Segundos</option>
+        <option value="1" >Minutos</option>
+        <option value="2" >Hora</option>
+    </select>
+    <label>a:</label>
+    <select id="selectTime2">
+        <option value="0" >Segundos</option>
+        <option value="1" >Minutos</option>
+        <option value="2" >Hora</option>
+    </select>
+    <div id ="resultado-time"></div>
+    <button id="btn-time">Convertir</button>
+</div>
+    </main>
+    <footer>
+        <img src="" alt="foto-campus">
+        <h2>Made by:Diana Diaz In:Campuslands</h2>
+    </footer>
+    <script type="module" src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="cambiarLista()">¡Cambia la lista!</button>
+    <ul id="listaTest">
+        <li>Antes del clic (item 1)</li>
+        <li>Antes del clic (item 2)</li>
+    </ul>
+
+    <button onclick="nuevoTexto()">Crea un párrafo!</button>
+ 
+    <p id="nuevo"></p>
+    <script>
+        function cambiarLista() {
+        document.getElementById("listaTest").innerHTML = "<li>Item1 después del clic</li><li>Item2 después del clic</li>";
+        }
+        console.log(cambiarLista)
+    </script>
+
+    <script>
+    function nuevoTexto() {
+        document.getElementById("nuevo").innerHTML = "Hemos incluido este contenido a un párrafo vacío";
+    }
+    </script>
+</body>
+</html>

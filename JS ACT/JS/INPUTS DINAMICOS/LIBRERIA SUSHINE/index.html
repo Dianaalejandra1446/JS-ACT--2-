@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libreria Sushine</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="" alt="icono">
+        <button>Agregar</button>
+    </header>
+    <main>
+        <section class="contenedor-ingresar">
+            <h2 class="title">Libreria Sushine</h2>
+            <form id="librosForm">
+                <h2>Ingresa un libro:</h2>
+                <h3>Datos del libro:</h3>
+             
+                <label for="">Ingresar url de la Imagen:</label>
+                <input id="portada" type="text" placeholder="Ingresa url de la imagen">
+
+                <label>Ingresa el Titulo: </label>
+                <input id="titulo" type="text" placeholder="Ingresa el titulo">
+
+                <label for="">Ingresar Autor: </label>
+                <input id="autor" type="text" placeholder="Ingresa autor">
+
+                <label for="">Ingresar año de publicacion:</label>
+                <input id="publicacion" type="number" placeholder="Ingresa año publicacion">
+
+                <button type="button" onclick="agregarLibro()">Agregar Libro</button>
+            </section>
+            <section>
+                <label>Ordenar por:</label>
+                <select id="ordenSelect">
+                    <option value="titulo">Titulo</option>
+                    <option value="autor">Autor</option>
+                    <option value="publicacion">Publicacion</option>
+                </select>
+        </form>
+        </section>
+
+        <section class="contenedor-libros">
+            <h2>Libros Prestados:</h2>
+            <div class="listaLibros"></div><!-- Aca se van a ingresar los libros -->
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>

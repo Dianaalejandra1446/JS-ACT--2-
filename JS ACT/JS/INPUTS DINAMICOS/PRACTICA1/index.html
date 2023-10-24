@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Dynamic</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <script src="https://kit.fontawesome.com/310ed8941b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <div class="contenedor">
+        <h1 class="title has-text-centered">Input Dinamico</h1>
+        <form action="" id="formUsuarios">
+
+            <label class="label">Username</label>
+            <div class="field is-grouped">
+                <div class="control has-icons-left ">
+                  <input class="input" name="name" type="text" placeholder="Ingresa tu nombre" autocomplete="off">
+                  <span class="icon is-small is-left">
+                    <i class="fas fa-user"></i>
+                  </span>
+                </div>
+
+                    <div class="control has-icons-left ">
+                    <input class="input" name="lastname" type="text" placeholder="Ingresa tu apellido" autocomplete="off">
+                    <span class="icon is-small is-left">
+                        <i class="fas fa-user"></i>
+                    </span>
+                    </div>
+                </div>
+                <div class="control">
+
+                    <button id="buttonAgregar" type="button" class="button is-danger">
+                        <span class="icon">
+                            <i class="fa-solid fa-plus" style="color: #ffffff;"></i>
+                        </span>
+                      </button>
+
+                      <button id="buttonGuardar" type="button"  class="button is-info">
+                        <span class="icon">
+                            Save
+                        </span>
+                      </button>
+                </div>
+            </div>
+        </form>
+        <hr>
+        <div id="divElements">
+            <div class="notification is-link is-light py-2 my-1">
+                <button class="delete"></button>
+                <strong>User- </strong>Primer nombre
+              </div>
+
+        </div>
+     </div>
+    <script src="app.js"></script>
+</body>
+</html>
